@@ -1,7 +1,7 @@
 {
-    "name": "angular-skeleton",
+    "name": "bugged-out",
     "version": "1.0.0",
-    "description": "Nick's Angular Skeleton project",
+    "description": "Nick's bugged out bugtracker project",
     "scripts": {
         "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
         "lite": "lite-server",
