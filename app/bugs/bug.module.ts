@@ -12,11 +12,11 @@ import { BugListComponent } from './bug-list/bug-list.component';
         BugRoutingModule
     ],
     declarations: [
-        BugListComponent
+        BugListComponent,
     ],
-    exports: [
-
-    ],
-    providers: [ ]
+    exports: [],
+    providers: [
+        
+    ]
 })
 export class BugModule { }

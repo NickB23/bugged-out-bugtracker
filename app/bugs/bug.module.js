@@ -24,7 +24,7 @@ var BugModule = (function () {
                 bug_routing_module_1.BugRoutingModule
             ],
             declarations: [
-                bug_list_component_1.BugListComponent
+                bug_list_component_1.BugListComponent,
             ],
             exports: [],
             providers: []
