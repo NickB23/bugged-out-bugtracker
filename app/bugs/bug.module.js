@@ -10,27 +10,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 // Modules
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var bug_module_1 = require('./bugs/bug.module');
-var app_routing_module_1 = require('./app-routing.module');
-// Components
-var app_component_1 = require('./app.component');
-var AppModule = (function () {
-    function AppModule() {
+var shared_module_1 = require('../shared/shared.module');
+var bug_routing_module_1 = require('./bug-routing.module');
+// Component
+var bug_list_component_1 = require('./bug-list/bug-list.component');
+var BugModule = (function () {
+    function BugModule() {
     }
-    AppModule = __decorate([
+    BugModule = __decorate([
         core_1.NgModule({
             imports: [
-                platform_browser_1.BrowserModule,
-                bug_module_1.BugModule,
-                app_routing_module_1.AppRoutingModule
+                shared_module_1.SharedModule,
+                bug_routing_module_1.BugRoutingModule
             ],
-            declarations: [app_component_1.AppComponent],
-            bootstrap: [app_component_1.AppComponent]
+            declarations: [
+                bug_list_component_1.BugListComponent
+            ],
+            exports: [],
+            providers: []
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], BugModule);
+    return BugModule;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.BugModule = BugModule;
+//# sourceMappingURL=bug.module.js.map
