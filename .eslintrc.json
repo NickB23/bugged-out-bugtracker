@@ -1,6 +1,3 @@
 {
-    "extends": "rallycoding",
-    "env": {
-        "browser": true
-    }
+    "extends": "rallycoding"
 }
