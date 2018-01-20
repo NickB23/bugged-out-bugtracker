@@ -22,7 +22,7 @@ export class BugService {
             },
                 err => {
                     obs.throw(err);
-                });
+            });
         });
     }
 
@@ -30,13 +30,9 @@ export class BugService {
         return Observable.create(obs => {
             this.bugsDbRef.on('child_changed', bug => {
                 const updatedBug = bug.val() as Bug;
-                updatedBug.id = bug.key;
-                obs.next(updatedBug);
-            },
-                err => {
-                    obs.throw(err);
-                });
-        });
+                updatedBug.id
+            })
+        })
     }
 
     addBug(bug: Bug) {
@@ -59,4 +55,4 @@ export class BugService {
         bug.updatedDate = Date.now();
         currentBugRef.update(bug);
     }
-}
+}  

@@ -33,10 +33,7 @@ var BugService = (function () {
         return Observable_1.Observable.create(function (obs) {
             _this.bugsDbRef.on('child_changed', function (bug) {
                 var updatedBug = bug.val();
-                updatedBug.id = bug.key;
-                obs.next(updatedBug);
-            }, function (err) {
-                obs.throw(err);
+                updatedBug.id;
             });
         });
     };
